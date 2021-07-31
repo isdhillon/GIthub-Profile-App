@@ -1,0 +1,128 @@
+/*Applied to all*/
+*{
+    box-sizing: border-box;
+}
+/*Html elements*/
+body{
+    margin: 0;
+    color: #d0e1f9;
+}
+a{
+    text-decoration: none;
+    color: #d0e1f9;
+    padding: 5px;
+}
+/*main container*/
+.main-container{
+    height: 100vh;
+    width:100vw;
+    background-color :#1e1f26;
+}
+/*heading*/
+.heading{
+    font-size: 4rem;
+    padding-top: 2rem;
+    padding-left: 35rem;
+
+}
+/*Search container*/
+.search-container{
+    height: 2rem;
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: auto;
+}
+.search-container>*{
+    height: 2rem;
+    width: 15rem;
+    font-size: 1rem;
+    margin-top: 15rem;
+    border-radius: 10px;
+    background-color: #283655;
+    color: #c4dfe6;
+}
+.input{
+    margin-right: 1rem;
+}
+/*ticket container*/
+.ticket-container{
+    background: #4d648d;
+    height: 24rem;
+    width: 60rem;
+    margin: auto;
+    margin-top: 10rem;
+    border-radius: 18px;
+}
+.profile{
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.name{
+    height: 2rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.description{
+    height: 4rem;
+    font-size: 1.2rem;
+}
+
+.avatar-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.avatar{
+    height: 9rem;
+    width: 9rem;
+    border: 8px #1e1f26 solid;
+    border-radius: 50% ;
+    margin-left: 5rem;
+    margin-right: 2rem;
+}
+    
+.info{
+    width: 24rem;
+    height: 10rem;
+}
+.bio-container{
+
+    height: 6rem;
+}
+.following-container{
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.following-container>*{
+    width: 6rem;
+    height: 2rem;
+}
+.following{
+    margin-right: -1rem;
+}
+.repo-container{
+    height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.repo-info{
+    height: 2.5rem;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    background-color: #283655;
+    border-radius: 4px;
+}
