@@ -10,6 +10,7 @@ let followers=document.querySelector(".followers")
 let following=document.querySelector(".following")
 let repo=document.querySelector(".repos");
 let repoContainer=document.querySelector(".repo-container")
+let avatar=document.querySelector(".avatar")
 //submit btn event listener
 submitBtn.addEventListener("click",function(){
     let userName=input.value;
@@ -24,6 +25,7 @@ async function getUser(userName){
     const respData=await resp.json();
     //assign data to html elements
     uName.innerText=respData.login;
+    avatar.setAttribute("style","border: 8px #1e1f26 solid")
     avatarImg.setAttribute("src",`${respData.avatar_url}`);
     description.innerText=respData.bio;
     followers.innerText="Followers:"+respData.followers;
@@ -60,5 +62,5 @@ function createRepo(name,link){
     //append child
     repoInfo.appendChild(a);
     repoContainer.appendChild(repoInfo)
-
+    
 }
