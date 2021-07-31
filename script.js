@@ -13,6 +13,7 @@ let repoContainer=document.querySelector(".repo-container")
 //submit btn event listener
 submitBtn.addEventListener("click",function(){
     let userName=input.value;
+    repoContainer.innerHTML=""
     getUser(userName)
 })
 //get user
